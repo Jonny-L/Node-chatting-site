@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Test Chat</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="html5china" />
+    <style>
+    body {
+	  padding: 50px;
+	  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	}
+
+	a {
+	  color: #00B7FF;
+	}
+    </style>
+    <script type='text/javascript' src="jquery-1.6.2.min.js"></script>
+    <script type='text/javascript' src="/socket.io/socket.io.js"></script>
+    <!-- <script type='text/javascript' src="/socket.io/socket.io-sessions.js?#1"></script> -->
+    <script type='text/javascript' src="kakao.js"></script>
+    <!-- <script type='text/javascript' src="nativeBridge.js"></script> -->
+</head>
+<body>
+	<h1>Chat</h1>
+	<p>Welcome to chat</p>
+	<input type="text" id="message" />
+	<button id="chat">Send Message</button>
+	<input type="radio" name='chatroom' checked value="1" onclick='javascript:switchChatroom(1)' />
+	Chat Room 1
+	<input type="radio" name='chatroom' checked value="2" onclick='javascript:switchChatroom(2)' />
+	Chat Room 2
+	<input type="radio" name='chatroom' checked value="3" onclick='javascript:switchChatroom(3)' />
+	Chat Room 3
+	<br>
+
+	picture 
+	<input type="file" id="picture" />
+	<br>
+
+	status message 
+	<input type="text" id="statusMessage" />
+	<br>
+
+	kakao id 
+	<input type="text" id="kakaoID" />
+	<br>
+
+	user name 
+	<input type="text" id="userName" />
+	<br>
+
+	phone numer 
+	<input type="text" id="phoneNumber" />
+	<br>
+
+	verify code 
+	<input type="text" id="verifyCode" />
+	<br>
+
+	<button id="register">Register</button>
+	<button id="verify">Verify</button>
+	<button id="updateProfile">Update Profile</button>
+
+	<table>
+		<tr>
+			<td id="chatroom1"><p>1111111</p></td>
+			<td id="chatroom2"><p>2222222</p></td>
+			<td id="chatroom3"><p>3333333</p></td>
+		</tr>
+	</table>
+
+
+</body>
+</html>
